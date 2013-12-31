@@ -1,3 +1,6 @@
+@white: white;
+@black: #2d2d2e;
+
 html, body {
   width: 100%;
   height: 100%;
@@ -24,7 +27,7 @@ html, body {
   left: 10%;
 
   .component {
-    background-color: white;
+    background-color: @white;
     position: absolute;
 
     &.pipe {
@@ -56,7 +59,7 @@ html, body {
   }
 
   .hatch {
-    background-color: #2d2d2e;
+    background-color: @black;
     position: absolute;
 
     &.window {
@@ -83,7 +86,7 @@ html, body {
   left: 0;
   .tree {
     position: absolute;
-    background-color: #2d2d2e;
+    background-color: @black;
     &.bottom {
       bottom: 0;
       left: 0;

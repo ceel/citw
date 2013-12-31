@@ -15,3 +15,63 @@ html, body {
   background: linear-gradient(to bottom,  #538735 0%,#0f2600 100%); /* W3C */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#538735', endColorstr='#0f2600',GradientType=0 ); /* IE6-9 */
 }
+
+.house {
+  position: absolute;
+  width: 50%;
+  height: 50%;
+  bottom: 0;
+  left: 10%;
+
+  .component {
+    background-color: white;
+    position: absolute;
+
+    &.pipe {
+      width: 45px;
+      height: 200px;
+      left: 90px;
+      bottom: 0;
+    }
+
+    &.body {
+      width: 175px;
+      height: 80px;
+      left: 135px;
+      bottom: 0;
+    }
+
+    &.roof {
+      background-color: transparent;
+
+      left: 43px;
+      bottom: 80px;
+
+      border-color: white transparent;
+      border-style: solid;
+      border-width: 0px 160px 150px 150px;
+      height: 0px;
+      width: 0px;
+    }
+  }
+
+  .hatch {
+    background-color: #2d2d2e;
+    position: absolute;
+
+    &.window {
+        width: 45px;
+        height: 45px;
+        left: 132px;
+        bottom: 50px;
+    }
+
+    &.door {
+      width: 55px;
+      height: 74px;
+      left: 210px;
+      bottom: 0;
+    }
+  }
+}
+
